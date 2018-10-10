@@ -4,9 +4,79 @@
 <p>HOLA  MUNDOs</p>
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
+Click me to display Date and Time.
+</button>
 <p id="demo"></p>
+<p>--------------------------------------</p>
+<p>Distintas tipologias de letras</p>
+<em>Emphasized text</em><br>
+<strong>Strong text</strong><br>
+<code>A piece of computer code</code><br>
+<samp>Sample output from a computer program</samp><br>
+<kbd>Keyboard input</kbd><br>
+<var>Variable</var>
+<p>--------------------------------------</p>
+<h2>JavaScript Strings</h2>
+
+<p>Strings can be written with double or single quotes.</p>
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = 'FCR';
+</script>
+<p>--------------------------------------</p>
+<h2>pulsa boton y nueva pagina con funcion</h2>
+
+<button onclick="myFunction()">pulsalo</button>
+
+<script>
+function myFunction() {
+    var w = window.open();
+    w.document.open();
+    w.document.write("<h2>segunda pagina</h2>");
+    w.document.close();
+}
+</script>
+<p>--------------------------------------</p>
+<p>funcion con imagen</p>
+<img id="myImg" src="indice.png" width="107" height="98">
+
+<p>Click the button to display the src attribute of the image.</p>
+
+<button onclick="myFunction()">pulsa y vee</button>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myImg").src;
+    document.getElementById("demo2").innerHTML = x;
+}
+</script>
+<p>--------------------------------------</p>
+<h2>futuro</h2>
+
+<button onclick="myFunction()">tu futuro</button>
+
+<script>
+function myFunction() {
+    alert("AROOOOOOOOOO TIO");
+}
+</script>
+<p>++++++++++++++++++++++++++++++++++++++++++++++</p>
+<h2>JS Arrays</h2>
+
+<p id="demo3"></p>
+
+<script>
+var cars = [
+    "Saab",
+    "Volvo",
+    "BMW"
+];
+document.getElementById("demo3").innerHTML = cars;
+</script>
 </body>
 </head>
 </html>
